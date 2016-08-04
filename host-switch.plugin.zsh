@@ -26,7 +26,6 @@ function hostswitch(){
 		hoststatus
 		echo "HOST_FILE_STATUS=$HOST_FILE_STATUS" > $HOST_STATUS_FILE
 	fi
-	resetdns
 }
 
 
