@@ -20,3 +20,5 @@ A zsh plugin for quickly switch hostfile and refresh dns cache
 	hostswitch dev
 	```
 	
+	3. Use `hoststatus` to check which host script is being used currently.
+	4. Changes might take effect in several minutes so you might need to reset your DNS cache.

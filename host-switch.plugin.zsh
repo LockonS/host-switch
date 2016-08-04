@@ -21,9 +21,8 @@ function hostswitch(){
 	else
 		sudo cp ${HOST_FILE_PATH}/${HOST_FILE_PREFIX}${@}	/etc/hosts
 		HOST_FILE_STATUS=${HOST_FILE_PREFIX}${@}
-		echo "Reset local DNS setting"
-		sudo killall -HUP mDNSResponder
-		# echo HOST_FILE_STATUS=${Blue}${HOST_FILE_PREFIX}${@}${NC}
+		#echo "Reset local DNS setting"
+		#sudo killall -HUP mDNSResponder
 		hoststatus
 		echo "HOST_FILE_STATUS=$HOST_FILE_STATUS" > $HOST_STATUS_FILE
 	fi
